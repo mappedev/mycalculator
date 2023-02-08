@@ -40,6 +40,7 @@ func parser(in string) int {
 	return value
 }
 
+// ReadIn Read an in
 func ReadIn() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
