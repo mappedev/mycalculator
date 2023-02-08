@@ -8,9 +8,11 @@ import (
 	"strings"
 )
 
-type calc struct{}
+// Calc struct calc
+type Calc struct{}
 
-func (c calc) operate(in string, op string) int {
+// Operate operate
+func (c Calc) Operate(in string, op string) int {
 	values := strings.Split(in, op)
 	value1 := parser(values[0])
 	value2 := parser(values[1])
